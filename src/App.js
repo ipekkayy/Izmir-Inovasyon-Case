@@ -6,6 +6,7 @@ import List from './pages/list.js';
 import Detail from './pages/detail.js'
 import Footer from "./component/Footer.js";
 
+
 function App() {
   return (
     <>
