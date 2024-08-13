@@ -26,10 +26,9 @@ const responsive = {
         slidesToSlide: 1
     }
 };
-const sliderImageUrl = [
-    HotelImg1, HotelImg2, HotelImg3, HotelImg4
-];
-const Slider = () => {
+
+const Slider = (hotelData) => {
+   console.log(hotelData.hotelData);
     return (
         <div className="parent mt-20">
             <Carousel
@@ -42,22 +41,22 @@ const Slider = () => {
                 partialVisible={false}
                 dotListClass="custom-dot-list-style"
             >
-                {sliderImageUrl.map((imageUrl, index) => {
+                {hotelData.hotelData.map((item, index) => {
                     return (
                         <div>
                             <div className="slider" key={index}>
                                 <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
-                                    <img src={imageUrl} />
+                                    <img src={item.image} />
                                 </Link>
                             </div>
                             <div className="ms-9">
                                 <div className=" poppins-medium mb-5 font-size-ml">
-                                    Hotel & Suites Nader
+                                   {item.name}
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <img src={NavigationIcon} className="w-15px" />
                                     <span className="text-gray font-size-md poppins-medium ms-6">
-                                        Behind City Hall, Cancun
+                                       {item.address}
                                     </span>
                                 </div>
                                 <div className="d-flex align-items-center mt-6">
@@ -67,9 +66,9 @@ const Slider = () => {
                                     </span>
                                 </div>
                                 <div className="d-flex align-items-center mt-6">
-                                    <span className="poppins-semibold">2.195 TL</span>
+                                    <span className="poppins-semibold">   {item.discountPrice} TL</span>
                                     <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
-                                        2.500 TL
+                                    {item.regularPrice} TL
                                     </span>
                                 </div>
                                 <div className="text-gray-3 font-size-sd">

@@ -11,8 +11,11 @@ import Campaign1 from "../images/campaign1.png";
 import Campaign2 from "../images/campaign2.png";
 import Campaign3 from "../images/campaign3.png";
 import Campaign4 from "../images/campaign4.png";
-
+import { useContext } from "react";
+import { MyContext } from "../context";
 const HomePage = () => {
+    const {hotelData,setHotelData} = useContext(MyContext)
+    console.log(hotelData);
     return (
         <div className="">
             <div className="container mx-20">
@@ -129,7 +132,7 @@ const HomePage = () => {
                             </Link>
                         </div>
                     </div>
-                    <Slider />
+                    <Slider hotelData={hotelData}/>
                 </div>
             </div>
             <div className=" position-relative">
