@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom";
 import Dropdown from "../component/Dropdown";
+import { useContext ,useEffect,useState} from "react";
+import { MyContext } from "../context";
+import StarIcon from "../images/star-icon.png";
+import NavigationIcon from "../images/navigation-icon-light.png";
 
 const List = () => {
+    const { hotelData, setHotelData } = useContext(MyContext)
+    console.log("list:",hotelData);
+    const [filteredData, setFilteredData] = useState(hotelData);
+    
+   
     return (
         <div className="container">
             <div className="row">
@@ -16,72 +25,8 @@ const List = () => {
                         Filtrele
                     </div>
                     <div className="bg-light-gray p-13 rounded-6">
-                        <Dropdown />
-                        <div className="mt-13">
-                            <div className="poppins-medium">
-                                Konaklama Tipi
-                            </div>
-                            <div>
-                                <div className="text-gray font-size-md mt-9" >
-                                    <label className="d-flex align-items-center">
-                                        <input
-                                            type="checkbox"
-                                        />
-                                        Oda Kahvaltılı (50)
-                                    </label>
-                                </div>
-                                <div className="text-gray font-size-md mt-9" >
-                                    <label className="d-flex align-items-center">
-                                        <input
-                                            type="checkbox"
-                                        />
-                                        Sadece Oda (45)
-                                    </label>
-                                </div>
-                                <div className="text-gray font-size-md mt-9" >
-                                    <label className="d-flex align-items-center">
-                                        <input
-                                            type="checkbox"
-                                        />
-                                        Her Şey Dahil (54)
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mt-13">
-                            <div className="poppins-medium">
-                                Tesis Olanakları
-                            </div>
-                            <div>
-                                <div className="text-gray font-size-md mt-9" >
-                                    <label className="d-flex align-items-center">
-                                        <input
-                                            type="checkbox"
-                                        />
-                                        Açık Yüzme Havuzu (15)
-                                    </label>
-                                </div>
-                                <div className="text-gray font-size-md mt-9" >
-                                    <label className="d-flex align-items-center">
-                                        <input
-                                            type="checkbox"
-                                        />
-                                        Sauna (8)
-                                    </label>
-                                </div>
-                                <div className="text-gray font-size-md mt-9" >
-                                    <label className="d-flex align-items-center">
-                                        <input
-                                            type="checkbox"
-                                        />
-                                        Spa Merkezi (12)
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <button className="list-filter-button poppins-medium mt-30 w-100 cursor-pointer">
-                            Filtrele
-                        </button>
+                        <Dropdown handleFilter={setFilteredData} filteredData={hotelData}/>
+                     
                     </div>
                 </div>
                 <div className="col-9 ">
@@ -99,9 +44,51 @@ const List = () => {
                             Otel
                         </div>
                         <span className="text-gray ms-17">
-                        129 tesis bulduk!
+                            129 tesis bulduk!
                         </span>
+
                     </div>
+
+                    <div className="row">
+                        {filteredData.map((item, index) => {
+                            return (
+                                <div className="col-6">
+                                    <div className="" key={index}>
+                                        <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
+                                            <img src={item.image} />
+                                        </Link>
+                                    </div>
+                                    <div className="ms-9">
+                                        <div className=" poppins-medium mb-5 font-size-ml">
+                                            {item.name}
+                                        </div>
+                                        <div className="d-flex align-items-center">
+                                            <img src={NavigationIcon} className="w-15px" />
+                                            <span className="text-gray font-size-md poppins-medium ms-6">
+                                                {item.address}
+                                            </span>
+                                        </div>
+                                        <div className="d-flex align-items-center mt-6">
+                                            <img src={StarIcon} className="w-15px" />
+                                            <span className="text-gray font-size-md poppins-medium ms-6">
+                                                4.9 (2,548 Değerlendirme)
+                                            </span>
+                                        </div>
+                                        <div className="d-flex align-items-center mt-6">
+                                            <span className="poppins-semibold">   {item.discountPrice} TL</span>
+                                            <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
+                                                {item.regularPrice} TL
+                                            </span>
+                                        </div>
+                                        <div className="text-gray-3 font-size-sd">
+                                            1 gece için vergiler ve ücretler dahildir
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+
                 </div>
             </div>
         </div>
