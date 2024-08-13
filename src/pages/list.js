@@ -58,10 +58,10 @@ const List = () => {
                                 <div className="col-6 mb-25">
                                     <div className="" key={index}>
                                         <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
-                                            <img src={item.image} className="w-100" />
+                                            <img src={item.image} className="w-100 list-img" />
                                         </Link>
                                     </div>
-                                    <div className="ms-9">
+                                    <div className="">
                                         <div className="d-flex align-items-center mb-5">
                                             <div className=" poppins-medium font-size-ml">
                                                 {item.name}
@@ -76,7 +76,7 @@ const List = () => {
                                         <div className="d-flex align-items-center mb-3">
                                             <div className="d-flex align-items-center">
                                                 <img src={NavigationIcon} className="w-15px" />
-                                                <span className="text-gray font-size-md poppins-medium ms-6">
+                                                <span className="text-gray font-size-md poppins-medium ms-6 text-overflow">
                                                     {item.address}
                                                 </span>
                                             </div>
@@ -91,7 +91,7 @@ const List = () => {
                                                 {item.regularPrice} TL
                                             </span>
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between font-size-md text-green mb-8">
+                                        <div className="d-flex align-items-center justify-content-between font-size-md text-green mb-25">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-utensils"></i>
                                                 <span className="ms-6">Her Şey Dahil</span>
@@ -101,15 +101,20 @@ const List = () => {
                                                 <span className="ms-6">12 Taksit Seçeneği</span>
                                             </div>
                                         </div>
-
                                     </div>
-                                    <button className="bg-dark text-white poppins-medium w-100 rounded-6 py-7">
+                                    <Link to="/pages/detail" className="bg-dark text-white poppins-medium w-100 rounded-6 py-7 d-block text-center">
                                         İncele
                                         <img src={AngleIcon} className="search-angle-icon" />
-                                    </button>
+                                    </Link>
                                 </div>
                             )
-                        }) : <div>yok</div>}
+                        }) :
+
+                            <div className="no-data">
+                                Aradığınız kriterlere uygun otel bulunmamaktadır.
+                            </div>
+
+                        }
                     </div>
 
                 </div>

@@ -2,10 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import HotelImg1 from "../images/hotel-1.png";
-import HotelImg2 from "../images/hotel-2.png";
-import HotelImg3 from "../images/hotel-3.png";
-import HotelImg4 from "../images/hotel-4.png";
 import NavigationIcon from "../images/navigation-icon-light.png";
 import StarIcon from "../images/star-icon.png";
 
