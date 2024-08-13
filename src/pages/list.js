@@ -50,7 +50,7 @@ const List = () => {
                     </div>
 
                     <div className="row">
-                        {filteredData.map((item, index) => {
+                        {filteredData.length > 0 ? filteredData.map((item, index) => {
                             return (
                                 <div className="col-6">
                                     <div className="" key={index}>
@@ -86,7 +86,7 @@ const List = () => {
                                     </div>
                                 </div>
                             )
-                        })}
+                        }) : <div>yok</div>}
                     </div>
 
                 </div>
