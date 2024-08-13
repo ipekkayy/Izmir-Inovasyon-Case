@@ -82,7 +82,9 @@
 .text-decoration-line-through {
   text-decoration: line-through;
 }
-
+.text-decoration-underline {
+  text-decoration: underline;
+}
 .d-flex {
   display: flex;
 }
@@ -693,4 +695,8 @@ input[type='checkbox'] {
 .info-hotel-detail{
   border-bottom: 1px solid #6C6C6C;
   padding-bottom: 13px;
+}
+.room-detail{
+  border-bottom: 1px solid #6C6C6C;
+  padding-bottom: 6px;
 }

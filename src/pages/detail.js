@@ -147,36 +147,259 @@ const Detail = () => {
                                 </div>
                             </TabPanel>
                             <TabPanel>
-                                <div className="col-4 mb-25">
-                                    <div className="" >
-                                        <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
-                                            <img src={HotelImage1} className="w-100 detail-list-img" />
-                                        </Link>
-                                    </div>
-                                    <div className="">
-                                        <div className="d-flex align-items-center mb-5">
-                                            <div className=" poppins-medium font-size-md">
-                                                Superior Oda, 1 En Büyük (King) Boy Yatak
+                                <div className="row mt-13">
+                                    <div className="col-4 mb-25">
+                                        <div className="" >
+                                            <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
+                                                <img src={HotelImage1} className="w-100 detail-list-img" />
+                                            </Link>
+                                        </div>
+                                        <div className="">
+                                            <div className="d-flex align-items-center mb-5">
+                                                <div className=" poppins-medium font-size-md">
+                                                    Superior Oda, 1 En Büyük (King) Boy Yatak
+                                                </div>
+                                            </div>
+                                            <div className="room-detail">
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-users"></i>
+                                                    <span className="text-gray font-size-md ms-10">3 Kişilik</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-bed"></i>
+                                                    <span className="text-gray font-size-md ms-10">1 en Büyük Boy (King) Yatak</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-wifi"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz kablosuz internet
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-square-parking"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz valesiz otopark
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex align-items-center mt-6">
+                                                <span className="poppins-medium font-size-md">Gecelik Kişi Başı</span>
+                                                <span className="poppins-semibold ms-6">2.500 TL</span>
+                                                <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
+                                                    2.750 TL
+                                                </span>
                                             </div>
                                         </div>
-                                        <div className="d-flex align-items-center mb-3">
-                                            <span className="poppins-semibold font-size-md">Gecelik Kişi Başı</span>
-                                            <span className="poppins-semibold ms-6">2.500 TL</span>
-                                            <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
-                                                2.750 TL
-                                            </span>
-                                        </div>
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                            Yer Ayırt
+                                        </Link>
                                     </div>
-                                    <Link to="/pages/detail" className=" poppins-medium w-100 text-dark py-7 d-block text-center">
-                                        Yer Ayırt
-
-                                    </Link>
+                                    <div className="col-4 mb-25">
+                                        <div className="" >
+                                            <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
+                                                <img src={HotelImage1} className="w-100 detail-list-img" />
+                                            </Link>
+                                        </div>
+                                        <div className="">
+                                            <div className="d-flex align-items-center mb-5">
+                                                <div className=" poppins-medium font-size-md">
+                                                Deluxe Oda, 1 En Büyük (King) Boy Yatak
+                                                </div>
+                                            </div>
+                                            <div className="room-detail">
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-users"></i>
+                                                    <span className="text-gray font-size-md ms-10">4 Kişilik</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-bed"></i>
+                                                    <span className="text-gray font-size-md ms-10">1 en Büyük Boy (King) Yatak</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-wifi"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz kablosuz internet
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-square-parking"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz valesiz otopark
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex align-items-center mt-6">
+                                                <span className="poppins-medium font-size-md">Gecelik Kişi Başı</span>
+                                                <span className="poppins-semibold ms-6">2.500 TL</span>
+                                                <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
+                                                    2.750 TL
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                            Yer Ayırt
+                                        </Link>
+                                    </div>
+                                    <div className="col-4 mb-25">
+                                        <div className="" >
+                                            <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
+                                                <img src={HotelImage1} className="w-100 detail-list-img" />
+                                            </Link>
+                                        </div>
+                                        <div className="">
+                                            <div className="d-flex align-items-center mb-5">
+                                                <div className=" poppins-medium font-size-md">
+                                                Superior Oda, 2 Tek Kişilik Yatak
+                                                </div>
+                                            </div>
+                                            <div className="room-detail">
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-users"></i>
+                                                    <span className="text-gray font-size-md ms-10">3 Kişilik</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-bed"></i>
+                                                    <span className="text-gray font-size-md ms-10">2 tek Kişilik Yatak</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-wifi"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz kablosuz internet
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-square-parking"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz valesiz otopark
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex align-items-center mt-6">
+                                                <span className="poppins-medium font-size-md">Gecelik Kişi Başı</span>
+                                                <span className="poppins-semibold ms-6">2.500 TL</span>
+                                                <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
+                                                    2.750 TL
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                            Yer Ayırt
+                                        </Link>
+                                    </div>
+                                    <div className="col-4 mb-25">
+                                        <div className="" >
+                                            <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
+                                                <img src={HotelImage1} className="w-100 detail-list-img" />
+                                            </Link>
+                                        </div>
+                                        <div className="">
+                                            <div className="d-flex align-items-center mb-5">
+                                                <div className=" poppins-medium font-size-md">
+                                                Süit, 1 Yatak Odası
+                                                </div>
+                                            </div>
+                                            <div className="room-detail">
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-users"></i>
+                                                    <span className="text-gray font-size-md ms-10">4 Kişilik</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-bed"></i>
+                                                    <span className="text-gray font-size-md ms-10">1 en Büyük Boy (King) Yatak</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-wifi"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz kablosuz internet
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-square-parking"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz valesiz otopark
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex align-items-center mt-6">
+                                                <span className="poppins-medium font-size-md">Gecelik Kişi Başı</span>
+                                                <span className="poppins-semibold ms-6">2.500 TL</span>
+                                                <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
+                                                    2.750 TL
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                            Yer Ayırt
+                                        </Link>
+                                    </div>
+                                    <div className="col-4 mb-25">
+                                        <div className="" >
+                                            <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
+                                                <img src={HotelImage1} className="w-100 detail-list-img" />
+                                            </Link>
+                                        </div>
+                                        <div className="">
+                                            <div className="d-flex align-items-center mb-5">
+                                                <div className=" poppins-medium font-size-md">
+                                                Junior Süit
+                                                </div>
+                                            </div>
+                                            <div className="room-detail">
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-users"></i>
+                                                    <span className="text-gray font-size-md ms-10">3 Kişilik</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-bed"></i>
+                                                    <span className="text-gray font-size-md ms-10">2 tek Kişilik Yatak</span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-wifi"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz kablosuz internet
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                    <i class="fa-solid fa-square-parking"></i>
+                                                    <span className="text-gray font-size-md ms-10">Ücretsiz valesiz otopark
+                                                    </span>
+                                                </div>
+                                                <div className="d-flex align-items-center mb-3">
+                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex align-items-center mt-6">
+                                                <span className="poppins-medium font-size-md">Gecelik Kişi Başı</span>
+                                                <span className="poppins-semibold ms-6">2.500 TL</span>
+                                                <span className="text-gray font-size-md poppins-medium ms-6 text-decoration-line-through">
+                                                    2.750 TL
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                            Yer Ayırt
+                                        </Link>
+                                    </div>
                                 </div>
+
                             </TabPanel>
                         </Tabs>
                     </div>
                     <div className="col-4">
-                        <div className="p-13 ">
+                        <div className="p-30">
                             <div className="info-hotel-detail">
                                 <div className="hotel-info-div">
                                     <i class="fa-solid fa-circle-check"></i>
