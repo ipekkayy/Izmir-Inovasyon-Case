@@ -7,16 +7,16 @@ import AngleIcon from "../images/angle-right-icon.png";
 
 const NavBar = () => {
     return (
-        <div className="mx-20 mt-20">
+        <div className="mx-20">
             <div className="position-relative index-header">
-                <div className="header-container">
-                    <div className="d-flex">
-                        <div className="logo-container w-25">
+                <div className="header-container position-relative">
+                    <div className="d-flex align-items-center justify-content-between">
+                        <div className="logo-container">
                             <Link to="/" className="roboto-slab">
                                 TatilAcentası
                             </Link>
                         </div>
-                        <div className="w-50 d-flex justify-content-center poppins-medium font-size-ml" >
+                        <div className="d-lg-flex justify-content-center poppins-medium font-size-ml d-none" >
                             <Link to="/" className="text-white me-30">
                                 Otel
                             </Link>
@@ -33,7 +33,7 @@ const NavBar = () => {
                                 Kampanyalar
                             </Link>
                         </div>
-                        <div className="w-25 d-flex justify-content-end align-items-center">
+                        <div className="d-lg-flex d-none justify-content-end align-items-center">
                             <div className="mt-6">
                                 <Link to="/" className="d-flex">
                                     <img src={WorldIcon} alt="lng" className="header-world-icon" />
@@ -46,9 +46,18 @@ const NavBar = () => {
                                 </Link>
                             </div>
                         </div>
+                        <div className="d-lg-none d-flex">
+                            <button type="button" className="mobile-menu">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                        <div className="d-lg-none d-block position-absolute bg-white mobile-side-menu">
+                            erfrefe
+                        </div>
+
                     </div>
                 </div>
-                <div className="filter-container">
+                <div className="filter-container d-md-block d-none">
                     <div className="text-white poppins-medium filter-title">
                         Nereye gitmek istersiniz ?
                     </div>

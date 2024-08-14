@@ -15,6 +15,9 @@ a{
 ::placeholder {
   color: #7E7E7E;
 }
+#root{
+  padding-top: 20px;
+}
 .roboto-slab{
   font-family: "Roboto Slab", serif;
   font-weight: 500;

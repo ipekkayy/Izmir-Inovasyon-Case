@@ -21,9 +21,11 @@
 .font-size-lm {
   font-size: 24px;
 }
-.rotate-180{
+
+.rotate-180 {
   rotate: 180deg;
 }
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -31,11 +33,14 @@
 .bg-light-gray {
   background-color: #F5F5F5;
 }
-
+.bg-white{
+  background-color: white;
+}
 .bg-dark {
   background-color: black;
 }
-.bg-blue{
+
+.bg-blue {
   background-color: #44A6DD;
 }
 
@@ -82,15 +87,26 @@
 .text-decoration-line-through {
   text-decoration: line-through;
 }
+
 .text-decoration-underline {
   text-decoration: underline;
 }
+
 .d-flex {
   display: flex;
 }
 
+.d-none {
+  display: none;
+}
+
 .d-block {
   display: block;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  border-radius: 6px;
 }
 
 .justify-content-between {
@@ -164,6 +180,7 @@
 .z-8 {
   z-index: 8;
 }
+
 .p-6 {
   padding: 6px;
 }
@@ -337,10 +354,12 @@
   flex: 0 0 auto;
   width: 58.33333333%;
 }
-.col-8{
+
+.col-8 {
   flex: 0 0 auto;
-  width:66.666667%
+  width: 66.666667%
 }
+
 .col-9 {
   flex: 0 0 auto;
   width: 75%;
@@ -671,10 +690,12 @@ input[type='checkbox'] {
   color: #ff4545;
   margin-top: 11px;
 }
-.react-tabs__tab--selected{
+
+.react-tabs__tab--selected {
   font-weight: 600;
 }
-.hotel-info-div{
+
+.hotel-info-div {
   background-color: #e5fdff;
   padding: 8px;
   border-radius: 6px;
@@ -683,7 +704,8 @@ input[type='checkbox'] {
   font-size: 14px;
   text-align: center;
 }
-.hotel-info-div-2{
+
+.hotel-info-div-2 {
   background-color: #1db8871c;
   padding: 8px;
   border-radius: 6px;
@@ -692,11 +714,59 @@ input[type='checkbox'] {
   font-size: 14px;
   text-align: center;
 }
-.info-hotel-detail{
+
+.info-hotel-detail {
   border-bottom: 1px solid #6C6C6C;
   padding-bottom: 13px;
 }
-.room-detail{
+
+.room-detail {
   border-bottom: 1px solid #6C6C6C;
   padding-bottom: 6px;
+}
+.mobile-menu{
+  background: transparent;
+  border: 0;
+  color: white;
+  font-size: 25px;
+}
+.mobile-side-menu{
+  right: 16px;
+  top: 60px;
+  width: 50%;
+  
+}
+@media (min-width: 992px) {
+  .d-lg-block {
+      display: block !important;
+  }
+  .d-lg-flex {
+    display: flex !important;
+  }
+  .d-lg-none {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .d-md-block {
+    display: block !important;
+  }
+  .d-md-flex {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 5px;
+  }
+  .index-header{
+    height: 300px;
+  }
 }

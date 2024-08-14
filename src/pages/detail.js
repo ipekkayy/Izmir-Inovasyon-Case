@@ -132,7 +132,7 @@ const Detail = () => {
                                         <div className="col-3 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-ship"></i>
-                                                <span className="font-size-md ms-10">Bar</span>
+                                                <span className="font-size-md ms-10">Tekne Turu</span>
                                                 <i class="fa-solid fa-circle-info text-gray ms-10 font-size-sd" data-tooltip-id="boat" data-tooltip-content="Ücretli"></i>
                                             </div>
                                             <Tooltip id="boat" />
@@ -192,8 +192,11 @@ const Detail = () => {
                                                     2.750 TL
                                                 </span>
                                             </div>
+                                            <div className="text-gray-3 font-size-sd">
+                                            Net ücret almak için arayınız.
+                                            </div>
                                         </div>
-                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
@@ -241,8 +244,11 @@ const Detail = () => {
                                                     2.750 TL
                                                 </span>
                                             </div>
+                                            <div className="text-gray-3 font-size-sd">
+                                            Net ücret almak için arayınız.
+                                            </div>
                                         </div>
-                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
@@ -290,8 +296,11 @@ const Detail = () => {
                                                     2.750 TL
                                                 </span>
                                             </div>
+                                            <div className="text-gray-3 font-size-sd">
+                                            Net ücret almak için arayınız.
+                                            </div>
                                         </div>
-                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
@@ -339,8 +348,11 @@ const Detail = () => {
                                                     2.750 TL
                                                 </span>
                                             </div>
+                                            <div className="text-gray-3 font-size-sd">
+                                            Net ücret almak için arayınız.
+                                            </div>
                                         </div>
-                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
@@ -388,8 +400,11 @@ const Detail = () => {
                                                     2.750 TL
                                                 </span>
                                             </div>
+                                            <div className="text-gray-3 font-size-sd">
+                                            Net ücret almak için arayınız.
+                                            </div>
                                         </div>
-                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-9">
+                                        <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>

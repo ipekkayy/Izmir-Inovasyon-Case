@@ -37,7 +37,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-3 ps-0">
+                        <div className="col-md-3 col-6 ps-0">
                             <div>
                                 <Link to="/pages/list" className="text-dark poppins-medium font-size-ml mt-13 d-flex align-items-center justify-content-between">
                                     <div className="">
@@ -53,10 +53,10 @@ const HomePage = () => {
                                 <span className="text-gray font-size-sd poppins-regular ms-6">1508 otel </span>
                             </div>
                             <Link to="/pages/list">
-                                <img src={Hotel} className="w-100 h-143px" />
+                                <img src={Hotel} className="w-100 h-143px object-fit-cover" />
                             </Link>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-6">
                             <div>
                                 <Link to="/pages/list" className="text-dark poppins-medium font-size-ml mt-13 d-flex align-items-center justify-content-between">
                                     <div className="">
@@ -72,10 +72,10 @@ const HomePage = () => {
                                 <span className="text-gray font-size-sd poppins-regular ms-6">1508 villa </span>
                             </div>
                             <Link to="/pages/list">
-                                <img src={Villa} className="w-100 h-143px" />
+                                <img src={Villa} className="w-100 h-143px object-fit-cover" />
                             </Link>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-6">
                             <div>
                                 <Link to="/pages/list" className="text-dark poppins-medium font-size-ml mt-13 d-flex align-items-center justify-content-between">
                                     <div className="">
@@ -91,10 +91,10 @@ const HomePage = () => {
                                 <span className="text-gray font-size-sd poppins-regular ms-6">1508 kamp alanı </span>
                             </div>
                             <Link to="/pages/list">
-                                <img src={Camp} className="w-100 h-143px" />
+                                <img src={Camp} className="w-100 h-143px object-fit-cover" />
                             </Link>
                         </div>
-                        <div className="col-3 pe-0">
+                        <div className="col-md-3 col-6 pe-0">
                             <div>
                                 <Link to="/pages/list" className="text-dark poppins-medium font-size-ml mt-13 d-flex align-items-center justify-content-between">
                                     <div className="">
@@ -110,7 +110,7 @@ const HomePage = () => {
                                 <span className="text-gray font-size-sd poppins-regular ms-6">1508 bungalov </span>
                             </div>
                             <Link to="/pages/list">
-                                <img src={Bungalov} className="w-100 h-143px" />
+                                <img src={Bungalov} className="w-100 h-143px object-fit-cover" />
                             </Link>
                         </div>
                     </div>
