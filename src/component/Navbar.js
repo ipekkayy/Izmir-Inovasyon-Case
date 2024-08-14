@@ -165,7 +165,9 @@ const NavBar = () => {
                             </div>
                             <div className="position-relative">
                                 <img src={DateIcon} className="date-icon input-icon" />
-                                <input type="date" className="form-style poppins-regular w-100" placeholder="Tarih seçiniz" />
+                                <input type="text"
+                                  onFocus={(e) => (e.target.type = "date")}
+                                  onBlur={(e) => (e.target.type = "text")} className="form-style poppins-regular w-100" placeholder="Tarih seçiniz" />
                             </div>
                         </div>
                         <div className="col-6">
@@ -179,12 +181,12 @@ const NavBar = () => {
                         </div>
                     </div>
                     <div className="text-center">
-                    <button className="text-white bg-transparent poppins-medium mt-13 border-0">
-                        Ara
-                        <img src={AngleIcon} className="search-angle-icon" />
-                    </button>
+                        <button className="text-white bg-transparent poppins-medium mt-13 border-0">
+                            Ara
+                            <img src={AngleIcon} className="search-angle-icon" />
+                        </button>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
