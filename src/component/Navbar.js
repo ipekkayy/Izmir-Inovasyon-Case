@@ -149,6 +149,9 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className="d-md-none d-block pb-20">
+                    <div className="text-white poppins-medium px-10 font-size-ml mb-8">
+                        Nereye gitmek istersiniz ?
+                    </div>
                     <div className="row ">
                         <div className="mb-5">
                             <div className=" font-size-md mb-5 text-white">
@@ -157,26 +160,6 @@ const NavBar = () => {
                             <div className="position-relative">
                                 <img src={NavigationIcon} className="navigation-icon input-icon" />
                                 <input type="text" className="form-style poppins-regular w-100" placeholder="Konum seçiniz" />
-                            </div>
-                        </div>
-                        <div className="col-6">
-                            <div className=" font-size-md mb-5 text-white">
-                                Giriş / Çıkış Tarihi
-                            </div>
-                            <div className="position-relative">
-                                <img src={DateIcon} className="date-icon input-icon" />
-                                <input type="text"
-                                  onFocus={(e) => (e.target.type = "date")}
-                                  onBlur={(e) => (e.target.type = "text")} className="form-style poppins-regular w-100" placeholder="Tarih seçiniz" />
-                            </div>
-                        </div>
-                        <div className="col-6">
-                            <div className=" font-size-md mb-5 text-white">
-                                Oda ve Kişi Sayısı
-                            </div>
-                            <div className="position-relative">
-                                <img src={UserIcon} className="user-icon input-icon" />
-                                <input type="text" className="form-style poppins-regular w-100" placeholder="Oda ve kişi sayısı seçiniz" />
                             </div>
                         </div>
                     </div>
