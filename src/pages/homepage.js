@@ -139,7 +139,7 @@ const HomePage = () => {
                 <div className="campaign-title poppins-medium">
                     Kampanyalar
                 </div>
-                <div className="d-flex pt-150 justify-content-center">
+                <div className="d-flex pt-150 justify-content-center overflow-auto">
                     <Link to="/" className="text-dark poppins-medium font-size-lm position-relative z-10">
                         <img src={Campaign1} className="" />
                         <div className="campaign-text poppins-bold text-white">

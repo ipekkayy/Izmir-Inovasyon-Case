@@ -4,8 +4,10 @@ import NavigationIcon from "../images/navigation-icon.png";
 import DateIcon from "../images/date-icon.png";
 import UserIcon from "../images/user-icon.png";
 import AngleIcon from "../images/angle-right-icon.png";
+import { useState } from "react";
 
 const NavBar = () => {
+    const [isBarOpen,setIsBarOpen]= useState(false)
     return (
         <div className="mx-20">
             <div className="position-relative index-header">
@@ -47,14 +49,35 @@ const NavBar = () => {
                             </div>
                         </div>
                         <div className="d-lg-none d-flex">
-                            <button type="button" className="mobile-menu">
+                            <button type="button" className="mobile-menu"onClick={()=>{
+                                setIsBarOpen(!isBarOpen)
+                            }}>
                                 <i class="fa-solid fa-bars"></i>
                             </button>
                         </div>
-                        <div className="d-lg-none d-block position-absolute bg-white mobile-side-menu">
-                            erfrefe
+                        <div className={`position-absolute bg-white mobile-side-menu ${isBarOpen ? 'd-block' : 'd-none'}`}>
+                            <Link to="/" className="text-dark d-block">
+                                Otel
+                            </Link>
+                            <Link to="/" className="text-dark d-block">
+                                Tur
+                            </Link>
+                            <Link to="/" className="text-dark d-block">
+                                Araç Kiralama
+                            </Link>
+                            <Link to="/" className="text-orange d-block">
+                                Kampanyalar
+                            </Link>
+                            <div className="d-flex justify-content-between align-items-center mt-9">
+                                <Link to="/" className="d-flex ">
+                                    <img src={WorldIcon} alt="lng" className="header-world-icon" />
+                                    <span className="text-dark poppins-medium font-size-md ms-10">TR</span>
+                                </Link>
+                                <Link to="/" className="signin-button text-gray-2 font-size-md poppins-semibold">
+                                    Giriş Yap
+                                </Link>
+                            </div>
                         </div>
-
                     </div>
                 </div>
                 <div className="filter-container d-md-block d-none">

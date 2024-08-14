@@ -314,7 +314,9 @@
 .overflow-hidden {
   overflow: hidden;
 }
-
+.overflow-auto {
+  overflow: auto;
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -733,8 +735,18 @@ input[type='checkbox'] {
 .mobile-side-menu{
   right: 16px;
   top: 60px;
-  width: 50%;
-  
+  width: 240px;
+  padding: 15px;
+  border-radius: 6px;
+
+}
+.mobile-side-menu a{
+  border-bottom: 1px solid #afafaf;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+.mobile-side-menu div a{
+  border-bottom: none;
 }
 @media (min-width: 992px) {
   .d-lg-block {

@@ -9,9 +9,19 @@ import AngleIcon from "../images/angle-right-icon.png";
 
 const List = () => {
     const { hotelData, setHotelData } = useContext(MyContext)
-    console.log("list:", hotelData);
     const [filteredData, setFilteredData] = useState(hotelData);
+    const [searchQuery, setSearchQuery] = useState("")
 
+    const handleSearchChange = (event) => {
+        setSearchQuery(event.target.value);
+    };
+
+    useEffect(() => {
+        const filteredHotels = hotelData.filter(hotel =>
+            hotel.name.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+        setFilteredData(filteredHotels)
+    }, [searchQuery])
 
     return (
         <div className="container">
@@ -49,7 +59,8 @@ const List = () => {
                         </span>
                     </div>
                     <div className="position-relative">
-                        <input className="search-filter w-100 poppins-regular" placeholder="Aradığınız bir otel var mı ?" />
+                        <input className="search-filter w-100 poppins-regular" placeholder="Aradığınız bir otel var mı ?" value={searchQuery}
+                            onChange={handleSearchChange} />
                         <img src={SearchIcon} className="search-icon position-absolute cursor-pointer" />
                     </div>
                     <div className="row mt-13">
@@ -94,7 +105,7 @@ const List = () => {
                                         <div className="d-flex align-items-center justify-content-between font-size-md text-green mb-25">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-utensils"></i>
-                                                <span className="ms-6">Her Şey Dahil</span>
+                                                <span className="ms-6">{item.description}</span>
                                             </div>
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-check"></i>
