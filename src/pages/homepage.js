@@ -154,7 +154,7 @@ const HomePage = () => {
                 </div>
                 <CampaignSlider  />
                 <div className="text-center py-15">
-                    <Link to="/" className="text-orange poppins-semibold">
+                    <Link to="/pages/list" className="text-orange poppins-semibold">
                         Tüm Kampanyaları Gör
                     </Link>
                 </div>

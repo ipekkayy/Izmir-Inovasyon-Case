@@ -19,31 +19,31 @@ const NavBar = () => {
                             </Link>
                         </div>
                         <div className="d-lg-flex justify-content-center poppins-medium font-size-ml d-none" >
-                            <Link to="/" className="text-white me-30">
+                            <Link to="/pages/list" className="text-white me-30">
                                 Otel
                             </Link>
-                            <Link to="/" className="text-white me-30">
+                            <Link to="javasript:;" className="text-white me-30">
                                 Tur
                             </Link>
-                            <Link to="/" className="text-white me-30">
+                            <Link to="javasript:;" className="text-white me-30">
                                 Uçak
                             </Link>
-                            <Link to="/" className="text-white me-30">
+                            <Link to="javasript:;" className="text-white me-30">
                                 Araç Kiralama
                             </Link>
-                            <Link to="/" className="text-orange">
+                            <Link to="javasript:;" className="text-orange">
                                 Kampanyalar
                             </Link>
                         </div>
                         <div className="d-lg-flex d-none justify-content-end align-items-center">
                             <div className="mt-6">
-                                <Link to="/" className="d-flex">
+                                <Link to="javasript:;" className="d-flex">
                                     <img src={WorldIcon} alt="lng" className="header-world-icon" />
                                     <span className="text-white poppins-medium font-size-md ms-10">TR</span>
                                 </Link>
                             </div>
                             <div className="ms-30">
-                                <Link to="/" className="signin-button text-gray-2 font-size-md poppins-medium">
+                                <Link to="javasript:;" className="signin-button text-gray-2 font-size-md poppins-medium">
                                     Giriş Yap
                                 </Link>
                             </div>
@@ -56,24 +56,24 @@ const NavBar = () => {
                             </button>
                         </div>
                         <div className={`position-absolute bg-white mobile-side-menu ${isBarOpen ? 'd-block' : 'd-none'}`}>
-                            <Link to="/" className="text-dark d-block">
+                            <Link to="/pages/list" className="text-dark d-block">
                                 Otel
                             </Link>
-                            <Link to="/" className="text-dark d-block">
+                            <Link to="javasript:;" className="text-dark d-block">
                                 Tur
                             </Link>
-                            <Link to="/" className="text-dark d-block">
+                            <Link to="javasript:;"className="text-dark d-block">
                                 Araç Kiralama
                             </Link>
-                            <Link to="/" className="text-orange d-block">
+                            <Link to="javasript:;" className="text-orange d-block">
                                 Kampanyalar
                             </Link>
                             <div className="d-flex justify-content-between align-items-center mt-9">
-                                <Link to="/" className="d-flex ">
+                                <Link to="javascript:;" className="d-flex ">
                                     <img src={WorldIcon} alt="lng" className="header-world-icon" />
                                     <span className="text-dark poppins-medium font-size-md ms-10">TR</span>
                                 </Link>
-                                <Link to="/" className="signin-button text-gray-2 font-size-md poppins-semibold">
+                                <Link to="javascript:;" className="signin-button text-gray-2 font-size-md poppins-semibold">
                                     Giriş Yap
                                 </Link>
                             </div>

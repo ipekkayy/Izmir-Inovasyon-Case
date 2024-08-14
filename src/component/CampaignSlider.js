@@ -64,7 +64,6 @@ const CampaignSlider = () => {
             <img src={Campaign2} className="" />
             <div className="campaign-text poppins-bold text-white horizantal-center">
               %25’ini şimdi öde, %75’ini tatilden sonra öde!
-
             </div>
           </Link>
         </div>

@@ -26,16 +26,16 @@ const Footer = () => {
                                     Bizi Takip Edin
                                 </div>
                                 <div className="d-flex align-items-center justify-content-start mt-13" >
-                                    <Link to="/" className="">
+                                    <Link to="javascript:;" className="">
                                         <img src={Instagram} className="w-19px" />
                                     </Link>
-                                    <Link to="/" className="">
+                                    <Link to="javascript:;" className="">
                                         <img src={X} className="w-19px ms-17" />
                                     </Link>
-                                    <Link to="/" className="">
+                                    <Link to="javascript:;" className="">
                                         <img src={Facebook} className="w-11px ms-17" />
                                     </Link>
-                                    <Link to="/" className="">
+                                    <Link to="javascript:;" className="">
                                         <img src={Discord} className="w-25px ms-17" />
                                     </Link>
                                     <Link to="/" className="">
@@ -50,19 +50,19 @@ const Footer = () => {
                                 Bizi Takip Edin
                             </div>
                             <div className="d-flex align-items-center justify-content-end mt-13" >
-                                <Link to="/" className="">
+                                <Link to="javascript:;" className="">
                                     <img src={Instagram} className="w-19px" />
                                 </Link>
-                                <Link to="/" className="">
+                                <Link to="javascript:;" className="">
                                     <img src={X} className="w-19px ms-17" />
                                 </Link>
-                                <Link to="/" className="">
+                                <Link to="javascript:;" className="">
                                     <img src={Facebook} className="w-11px ms-17" />
                                 </Link>
-                                <Link to="/" className="">
+                                <Link to="javascript:;" className="">
                                     <img src={Discord} className="w-25px ms-17" />
                                 </Link>
-                                <Link to="/" className="">
+                                <Link to="javascript:;" className="">
                                     <img src={Linkedin} className="w-19px ms-17" />
                                 </Link>
                             </div>
@@ -70,58 +70,57 @@ const Footer = () => {
                     <div className="col-md-7">
                         <div className="row footer-mobile-padding">
                             <div className="col-4">
-                                <Link to="/" className="text-white d-block poppins-medium">
+                                <Link to="javascript:;" className="text-white d-block poppins-medium">
                                     Kurumsal
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Hakkımızda
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Satış Ofisleri
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Kariyer
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Haberler
                                 </Link>
                             </div>
                             <div className="col-4">
-                                <Link to="/" className="text-white d-block poppins-medium">
+                                <Link to="javascript:;" className="text-white d-block poppins-medium">
                                     Destek
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     İletişim
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     SSS
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Rezervasyonlar
                                 </Link>
                             </div>
                             <div className="col-4">
-                                <Link to="/" className="text-white d-block poppins-medium">
+                                <Link to="javascript:;" className="text-white d-block poppins-medium">
                                     Politikalar
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Hükümler ve Koşullar
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Gizlilik Sözleşmesi
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Kullanım Sözleşmesi
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Bilgi Güvenliği Politikası
                                 </Link>
-                                <Link to="/" className="text-gray-3 d-block font-size-md mt-9">
+                                <Link to="javascript:;" className="text-gray-3 d-block font-size-md mt-9">
                                     Üyelik Sözleşmesi
                                 </Link>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -29,7 +29,7 @@ const List = () => {
                 <div className="col-md-3">
                     <div className="signup-text text-center">
                         Özel fırsatları kaçırma !
-                        <Link to="/" className="text-blue ms-6 ">
+                        <Link to="javascript:;" className="text-blue ms-6 ">
                             Hemen üye ol.
                         </Link>
                     </div>

@@ -475,7 +475,6 @@ const Detail = () => {
                                         </Link>
                                     </div>
                                 </div>
-
                             </TabPanel>
                         </Tabs>
                     </div>
