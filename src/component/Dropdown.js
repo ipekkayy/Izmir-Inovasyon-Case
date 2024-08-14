@@ -14,21 +14,17 @@ const Dropdown = ({ handleFilter, filteredData }) => {
         switch (city) {
             case 'Istanbul':
                 setIstanbulOpen(!isIstanbulOpen);
-               
                 break;
             case 'Ankara':
                 setAnkaraOpen(!isAnkaraOpen);
-            
                 break;
             case 'Izmir':
                 setIzmirOpen(!isIzmirOpen);
-           
                 break;
             default:
                 break;
         }
     };
-
 
     const handleLocation = (district) => {
         setLocation((prevLocation) => 
@@ -54,17 +50,11 @@ const Dropdown = ({ handleFilter, filteredData }) => {
         );
     };
 
-
     const filter = () => {
         console.log(location,accomodation,facility);
         const filteredHotels = filteredData.filter(hotel => {
-            // Filter by Location
             const locationMatch = location.length === 0 || location.some(loc => hotel.location.district[loc]);
-        
-            // Filter by Accommodation
             const accomodationMatch = accomodation.length === 0 || accomodation.some(acc => hotel.accomodation[acc]);
-        
-            // Filter by Facility
             const facilityMatch = facility.length === 0 || facility.some(fac => hotel.facility[fac]);
         
             return locationMatch && accomodationMatch && facilityMatch;
@@ -74,7 +64,6 @@ const Dropdown = ({ handleFilter, filteredData }) => {
     return (
         <div>
             <div className="poppins-medium">Bölge</div>
-            
             <div className='dropdown'>
                 <div className='dropdown-header' onClick={() => toggleDropdown("Istanbul")}>
                     İstanbul
@@ -103,7 +92,6 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                     </div>
                 </div>
             </div>
-
             <div className='dropdown'>
                 <div className='dropdown-header' onClick={() => toggleDropdown("Ankara")}>
                     Ankara
@@ -117,7 +105,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={location.includes("Cankaya")}
                                 onChange={() => handleLocation("Cankaya")}
                             />
-                            Çankaya (10)
+                            Çankaya 
                         </label>
                     </div>
                     <div className="dropdown-item text-gray font-size-md">
@@ -132,7 +120,6 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                     </div>
                 </div>
             </div>
-
             <div className='dropdown'>
                 <div className='dropdown-header' onClick={() => toggleDropdown("Izmir")}>
                     İzmir
@@ -156,7 +143,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={location.includes("Bornova")}
                                 onChange={() => handleLocation("Bornova")}
                             />
-                            Bornova (10)
+                            Bornova 
                         </label>
                     </div>
                     <div className="dropdown-item text-gray font-size-md">
@@ -182,7 +169,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={accomodation.includes("roomWithBreakfast")}
                                 onChange={() => handleAccomodation("roomWithBreakfast")}
                             />
-                            Oda Kahvaltılı (50)
+                            Oda Kahvaltılı 
                         </label>
                     </div>
                     <div className="text-gray font-size-md mt-9">
@@ -192,7 +179,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={accomodation.includes("roomOnly")}
                                 onChange={() => handleAccomodation("roomOnly")}
                             />
-                            Sadece Oda (45)
+                            Sadece Oda 
                         </label>
                     </div>
                     <div className="text-gray font-size-md mt-9">
@@ -202,7 +189,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={accomodation.includes("allIn")}
                                 onChange={() => handleAccomodation("allIn")}
                             />
-                            Her Şey Dahil (54)
+                            Her Şey Dahil 
                         </label>
                     </div>
                 </div>
@@ -218,7 +205,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={facility.includes("pool")}
                                 onChange={() => handleFacility("pool")}
                             />
-                            Açık Yüzme Havuzu (15)
+                            Açık Yüzme Havuzu 
                         </label>
                     </div>
                     <div className="text-gray font-size-md mt-9">
@@ -228,7 +215,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={facility.includes("sauna")}
                                 onChange={() => handleFacility("sauna")}
                             />
-                            Sauna (8)
+                            Sauna
                         </label>
                     </div>
                     <div className="text-gray font-size-md mt-9">
@@ -238,7 +225,7 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                                 checked={facility.includes("spa")}
                                 onChange={() => handleFacility("spa")}
                             />
-                            Spa Merkezi (12)
+                            Spa Merkezi
                         </label>
                     </div>
                 </div>

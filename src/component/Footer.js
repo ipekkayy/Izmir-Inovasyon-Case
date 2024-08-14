@@ -8,9 +8,9 @@ import Linkedin from "../images/linkedin.png";
 const Footer = () => {
     return (
         <div className=" bg-dark">
-            <div className="container mx-20">
+            <div className="container mx-20 footer-mobile-padding">
                 <div className="row footer-row">
-                    <div className="col-5">
+                    <div className="col-5 ">
                         <div className="footer-flex">
                             <div>
                                 <Link to="/" className="roboto-slab">
@@ -21,7 +21,7 @@ const Footer = () => {
                                     Akın İş Hanı Kat:4, 35210 Konak/İzmir
                                 </div>
                             </div>
-                            <div className="mt-30">
+                            <div className="mt-30 d-md-block d-none">
                                 <div className="poppins-medium font-size-md text-white">
                                     Bizi Takip Edin
                                 </div>
@@ -44,11 +44,31 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-                    <div className="col-7">
-                        <div className="row ">
+                    <div className="col-7 d-md-none d-block">
+                            <div className="poppins-medium font-size-md text-white text-end">
+                                Bizi Takip Edin
+                            </div>
+                            <div className="d-flex align-items-center justify-content-end mt-13" >
+                                <Link to="/" className="">
+                                    <img src={Instagram} className="w-19px" />
+                                </Link>
+                                <Link to="/" className="">
+                                    <img src={X} className="w-19px ms-17" />
+                                </Link>
+                                <Link to="/" className="">
+                                    <img src={Facebook} className="w-11px ms-17" />
+                                </Link>
+                                <Link to="/" className="">
+                                    <img src={Discord} className="w-25px ms-17" />
+                                </Link>
+                                <Link to="/" className="">
+                                    <img src={Linkedin} className="w-19px ms-17" />
+                                </Link>
+                            </div>
+                    </div>
+                    <div className="col-md-7">
+                        <div className="row footer-mobile-padding">
                             <div className="col-4">
                                 <Link to="/" className="text-white d-block poppins-medium">
                                     Kurumsal
@@ -104,7 +124,6 @@ const Footer = () => {
 
                     </div>
                 </div>
-
             </div>
         </div>
     );

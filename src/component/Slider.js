@@ -26,10 +26,10 @@ const responsive = {
 const Slider = (hotelData) => {
    console.log(hotelData.hotelData);
     return (
-        <div className="parent mt-20">
+        <div className="parent mt-20 pb-20">
             <Carousel
                 responsive={responsive}
-                autoPlay={true}
+                autoPlay={false}
                 swipeable={true}
                 draggable={true}
                 showDots={false}
@@ -40,18 +40,18 @@ const Slider = (hotelData) => {
                 {hotelData.hotelData.map((item, index) => {
                     return (
                         <div>
-                            <div className="slider" key={index}>
+                            <div className="slider " key={index}>
                                 <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
                                     <img src={item.image} />
                                 </Link>
                             </div>
                             <div className="ms-9">
-                                <div className=" poppins-medium mb-5 font-size-ml">
+                                <div className=" poppins-medium mb-5 font-size-ml text-overflow-2">
                                    {item.name}
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <img src={NavigationIcon} className="w-15px" />
-                                    <span className="text-gray font-size-md poppins-medium ms-6">
+                                    <span className="text-gray font-size-md poppins-medium ms-6 text-overflow-2">
                                        {item.address}
                                     </span>
                                 </div>
