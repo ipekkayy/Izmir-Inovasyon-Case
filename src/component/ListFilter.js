@@ -1,7 +1,5 @@
 import { useState, React, useEffect } from "react";
-
-
-const Dropdown = ({ handleFilter, filteredData }) => {
+const ListFilter = ({ handleFilter, filteredData }) => {
     const [isIstanbulOpen, setIstanbulOpen] = useState(false);
     const [isAnkaraOpen, setAnkaraOpen] = useState(false);
     const [isIzmirOpen, setIzmirOpen] = useState(false);
@@ -194,7 +192,6 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                     </div>
                 </div>
             </div>
-
             <div className="mt-13">
                 <div className="poppins-medium">Tesis Olanakları</div>
                 <div>
@@ -230,7 +227,6 @@ const Dropdown = ({ handleFilter, filteredData }) => {
                     </div>
                 </div>
             </div>
-
             <button className="list-filter-button poppins-medium mt-30 w-100 cursor-pointer" onClick={filter}>
                 Filtrele
             </button>
@@ -238,4 +234,4 @@ const Dropdown = ({ handleFilter, filteredData }) => {
     );
 }
 
-export default Dropdown;
+export default ListFilter;

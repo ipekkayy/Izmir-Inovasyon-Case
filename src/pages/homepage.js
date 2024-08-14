@@ -19,9 +19,9 @@ const HomePage = () => {
     console.log(hotelData);
     return (
         <div className="">
-            <div className="container mx-20">
+            <div className="px-10">
                 <div>
-                    <div className="d-md-flex align-items-center justify-content-between">
+                    <div className="d-md-flex align-items-center justify-content-between mt-13">
                         <div>
                             <div className="font-size-lm poppins-medium ">
                                 Nerede kalmak istediğinize siz karar verin
@@ -38,7 +38,7 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-md-3 col-6 ps-0">
+                        <div className="col-md-3 col-6">
                             <div>
                                 <Link to="/pages/list" className="text-dark poppins-medium font-size-ml mt-13 d-flex align-items-center justify-content-between">
                                     <div className="">
@@ -95,7 +95,7 @@ const HomePage = () => {
                                 <img src={Camp} className="w-100 h-143px object-fit-cover" />
                             </Link>
                         </div>
-                        <div className="col-md-3 col-6 pe-0">
+                        <div className="col-md-3 col-6">
                             <div>
                                 <Link to="/pages/list" className="text-dark poppins-medium font-size-ml mt-13 d-flex align-items-center justify-content-between">
                                     <div className="">
@@ -160,7 +160,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="bg-light-gray">
-                <div className="container mx-20 ">
+                <div className="container px-10 ">
                     <div className="row">
                         <div className="col-md-6">
                             <div className="font-size-lm poppins-medium">
@@ -169,92 +169,92 @@ const HomePage = () => {
                             <div className="row mt-13">
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Bodrum Otelleri</span>
+                                        <span className="w-180px">Bodrum Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Abant Otelleri</span>
+                                        <span className="w-180px">Abant Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Alaçatı Otelleri</span>
+                                        <span className="w-180px">Alaçatı Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Antalya Otelleri</span>
+                                        <span className="w-180px">Antalya Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Cunda Otelleri</span>
+                                        <span className="w-180px">Cunda Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Kuşadası Otelleri</span>
+                                        <span className="w-180px">Kuşadası Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Bursa Otelleri</span>
+                                        <span className="w-180px">Bursa Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 mt-md-0 mt-13">
                             <div className="font-size-lm poppins-medium">
                                 En Popüler Ülkeler ve Bölgeler
                             </div>
                             <div className="row mt-13">
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Türkiye Otelleri</span>
+                                        <span className="w-180px">Türkiye Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Yunanistan Otelleri</span>
+                                        <span className="w-180px">Yunanistan Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Maldivler Otelleri</span>
+                                        <span className="w-180px">Maldivler Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Ege Bölgesi Otelleri</span>
+                                        <span className="w-180px">Ege Bölgesi Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Seyşeyller Otelleri</span>
+                                        <span className="w-180px">Seyşeyller Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Muğla Bölgesi Otelleri</span>
+                                        <span className="w-180px">Muğla Bölgesi Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
                                 <div className="col-6 ps-0 mb-8">
                                     <Link to="/pages/list" className="font-size-md poppins-regular text-gray d-flex align-items-center">
-                                        <span className="w-50">Bursa Otelleri</span>
+                                        <span className="w-180px">Bursa Otelleri</span>
                                         <img src={DetailIconGray} className=" w-12px" />
                                     </Link>
                                 </div>
@@ -263,6 +263,7 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+
         </div>
 
     )

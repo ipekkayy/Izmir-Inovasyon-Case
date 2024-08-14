@@ -8,7 +8,7 @@ import Linkedin from "../images/linkedin.png";
 const Footer = () => {
     return (
         <div className=" bg-dark">
-            <div className="container mx-20 footer-mobile-padding">
+            <div className="container footer-mobile-padding">
                 <div className="row footer-row">
                     <div className="col-5 ">
                         <div className="footer-flex">

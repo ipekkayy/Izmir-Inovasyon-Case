@@ -42,7 +42,7 @@ const Slider = (hotelData) => {
                         <div>
                             <div className="slider " key={index}>
                                 <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
-                                    <img src={item.image} />
+                                    <img src={item.image} className="img-zoom" />
                                 </Link>
                             </div>
                             <div className="ms-9">

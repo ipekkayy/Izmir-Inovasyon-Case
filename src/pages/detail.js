@@ -32,7 +32,7 @@ const Detail = () => {
             <PhotoGallery />
             <div className="container">
                 <div className="row">
-                    <div className="col-8">
+                    <div className="col-md-8">
                         <Tabs className="my-10">
                             <TabList>
                                 <Tab>Otel Özellikleri</Tab>
@@ -50,7 +50,7 @@ const Detail = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="d-flex align-items-center mb-3">
+                                <div className="d-md-flex align-items-center mb-3">
                                     <div className="d-flex align-items-center">
                                         <img src={NavigationIcon} className="w-15px" />
                                         <span className="text-gray font-size-md poppins-medium ms-6 text-overflow">
@@ -91,13 +91,13 @@ const Detail = () => {
                                         Otel Özellikleri
                                     </div>
                                     <div className="row mt-6">
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-water-ladder"></i>
                                                 <span className="font-size-md ms-10">Havuz</span>
                                             </div>
                                         </div>
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-car" ></i>
                                                 <span className="font-size-md ms-10">Araç Kiralama</span>
@@ -105,31 +105,31 @@ const Detail = () => {
                                             </div>
                                             <Tooltip id="rentacar" />
                                         </div>
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-brands fa-hotjar"></i>
                                                 <span className="font-size-md ms-10">Sauna</span>
                                             </div>
                                         </div>
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-dumbbell"></i>
                                                 <span className="font-size-md ms-10">Spor Salonu</span>
                                             </div>
                                         </div>
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-table-tennis-paddle-ball"></i>
                                                 <span className="font-size-md ms-10">Masa Tenisi</span>
                                             </div>
                                         </div>
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-martini-glass"></i>
                                                 <span className="font-size-md ms-10">Bar</span>
                                             </div>
                                         </div>
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-ship"></i>
                                                 <span className="font-size-md ms-10">Tekne Turu</span>
@@ -137,10 +137,76 @@ const Detail = () => {
                                             </div>
                                             <Tooltip id="boat" />
                                         </div>
-                                        <div className="col-3 mt-6">
+                                        <div className="col-md-3 col-6 mt-6">
                                             <div className="d-flex align-items-center">
                                                 <i class="fa-solid fa-smoking"></i>
                                                 <span className="font-size-md ms-10">Sigara İçilmez</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="d-md-none d-block">
+                                        <div className="mt-25">
+                                            <div className="info-hotel-detail">
+                                                <div className="hotel-info-div">
+                                                    <i class="fa-solid fa-circle-check"></i>
+                                                    <span className="ms-9">Sürdürülebilir Turizm Sertifikalı </span>
+                                                </div>
+                                                <div className="hotel-info-div-2 mt-9">
+                                                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                                                    <span className="ms-9">Fiyat Farkı İade Garantisi </span>
+                                                </div>
+                                                <div className="mt-13">
+                                                    <div className="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <i class="fa-solid fa-location-pin"></i>
+                                                            <span className=" font-size-md ms-10">Bornova Metro</span>
+                                                        </div>
+                                                        <span className=" font-size-md ms-10">15 dk yürüyüş</span>
+                                                    </div>
+                                                    <div className="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <i class="fa-solid fa-location-pin"></i>
+                                                            <span className=" font-size-md ms-10">Konak Meydan</span>
+                                                        </div>
+                                                        <span className=" font-size-md ms-10">20 dk sürüş</span>
+                                                    </div>
+                                                    <div className="d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <i class="fa-solid fa-plane-departure"></i>
+                                                            <span className=" font-size-md ms-10">ADB</span>
+                                                        </div>
+                                                        <span className=" font-size-md ms-10">45 dk sürüş</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="d-flex justify-content-between mt-13">
+                                                <div className="d-flex align-items-center">
+                                                    <i class="fa-solid fa-arrow-right-to-bracket font-size-lm"></i>
+                                                    <div className="ms-17">
+                                                        <div className="text-gray font-size-md">
+                                                            Check-in
+                                                        </div>
+                                                        <div className="poppins-semibold font-size-ml">
+                                                            14:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="d-flex align-items-center">
+                                                    <i class="fa-solid fa-arrow-right-to-bracket font-size-lm rotate-180"></i>
+                                                    <div className="ms-17">
+                                                        <div className="text-gray font-size-md ">
+                                                            Check-out
+                                                        </div>
+                                                        <div className="poppins-semibold font-size-ml">
+                                                            12:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="mt-13">
+                                                <Link to="javascript:;" className="bg-blue text-white poppins-medium w-100 rounded-6 py-7 d-block text-center">
+                                                    Rezervasyon İçin Tıklayınız
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +214,7 @@ const Detail = () => {
                             </TabPanel>
                             <TabPanel>
                                 <div className="row mt-13">
-                                    <div className="col-4 mb-25">
+                                    <div className="col-md-4 mb-25">
                                         <div className="" >
                                             <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
                                                 <img src={HotelImage1} className="w-100 detail-list-img" />
@@ -180,7 +246,7 @@ const Detail = () => {
                                                     </span>
                                                 </div>
                                                 <div className="d-flex align-items-center mb-3">
-                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <i class="fa-solid fa-check text-green"></i>
                                                     <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
                                                     </span>
                                                 </div>
@@ -193,14 +259,14 @@ const Detail = () => {
                                                 </span>
                                             </div>
                                             <div className="text-gray-3 font-size-sd">
-                                            Net ücret almak için arayınız.
+                                                Net ücret almak için arayınız.
                                             </div>
                                         </div>
                                         <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
-                                    <div className="col-4 mb-25">
+                                    <div className="col-md-4 mb-25">
                                         <div className="" >
                                             <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
                                                 <img src={HotelImage1} className="w-100 detail-list-img" />
@@ -209,7 +275,7 @@ const Detail = () => {
                                         <div className="">
                                             <div className="d-flex align-items-center mb-5">
                                                 <div className=" poppins-medium font-size-md">
-                                                Deluxe Oda, 1 En Büyük (King) Boy Yatak
+                                                    Deluxe Oda, 1 En Büyük (King) Boy Yatak
                                                 </div>
                                             </div>
                                             <div className="room-detail">
@@ -232,7 +298,7 @@ const Detail = () => {
                                                     </span>
                                                 </div>
                                                 <div className="d-flex align-items-center mb-3">
-                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <i class="fa-solid fa-check text-green"></i>
                                                     <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
                                                     </span>
                                                 </div>
@@ -245,14 +311,14 @@ const Detail = () => {
                                                 </span>
                                             </div>
                                             <div className="text-gray-3 font-size-sd">
-                                            Net ücret almak için arayınız.
+                                                Net ücret almak için arayınız.
                                             </div>
                                         </div>
                                         <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
-                                    <div className="col-4 mb-25">
+                                    <div className="col-md-4 mb-25">
                                         <div className="" >
                                             <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
                                                 <img src={HotelImage1} className="w-100 detail-list-img" />
@@ -261,7 +327,7 @@ const Detail = () => {
                                         <div className="">
                                             <div className="d-flex align-items-center mb-5">
                                                 <div className=" poppins-medium font-size-md">
-                                                Superior Oda, 2 Tek Kişilik Yatak
+                                                    Superior Oda, 2 Tek Kişilik Yatak
                                                 </div>
                                             </div>
                                             <div className="room-detail">
@@ -284,7 +350,7 @@ const Detail = () => {
                                                     </span>
                                                 </div>
                                                 <div className="d-flex align-items-center mb-3">
-                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <i class="fa-solid fa-check text-green"></i>
                                                     <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
                                                     </span>
                                                 </div>
@@ -297,14 +363,14 @@ const Detail = () => {
                                                 </span>
                                             </div>
                                             <div className="text-gray-3 font-size-sd">
-                                            Net ücret almak için arayınız.
+                                                Net ücret almak için arayınız.
                                             </div>
                                         </div>
                                         <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
-                                    <div className="col-4 mb-25">
+                                    <div className="col-md-4 mb-25">
                                         <div className="" >
                                             <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
                                                 <img src={HotelImage1} className="w-100 detail-list-img" />
@@ -313,7 +379,7 @@ const Detail = () => {
                                         <div className="">
                                             <div className="d-flex align-items-center mb-5">
                                                 <div className=" poppins-medium font-size-md">
-                                                Süit, 1 Yatak Odası
+                                                    Süit, 1 Yatak Odası
                                                 </div>
                                             </div>
                                             <div className="room-detail">
@@ -336,7 +402,7 @@ const Detail = () => {
                                                     </span>
                                                 </div>
                                                 <div className="d-flex align-items-center mb-3">
-                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <i class="fa-solid fa-check text-green"></i>
                                                     <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
                                                     </span>
                                                 </div>
@@ -349,14 +415,14 @@ const Detail = () => {
                                                 </span>
                                             </div>
                                             <div className="text-gray-3 font-size-sd">
-                                            Net ücret almak için arayınız.
+                                                Net ücret almak için arayınız.
                                             </div>
                                         </div>
                                         <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
                                             Yer Ayırt
                                         </Link>
                                     </div>
-                                    <div className="col-4 mb-25">
+                                    <div className="col-md-4 mb-25">
                                         <div className="" >
                                             <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
                                                 <img src={HotelImage1} className="w-100 detail-list-img" />
@@ -365,7 +431,7 @@ const Detail = () => {
                                         <div className="">
                                             <div className="d-flex align-items-center mb-5">
                                                 <div className=" poppins-medium font-size-md">
-                                                Junior Süit
+                                                    Junior Süit
                                                 </div>
                                             </div>
                                             <div className="room-detail">
@@ -388,7 +454,7 @@ const Detail = () => {
                                                     </span>
                                                 </div>
                                                 <div className="d-flex align-items-center mb-3">
-                                                <i class="fa-solid fa-check text-green"></i>
+                                                    <i class="fa-solid fa-check text-green"></i>
                                                     <span className="text-gray font-size-md ms-10">Açık Büfe Kahvaltı
                                                     </span>
                                                 </div>
@@ -401,7 +467,7 @@ const Detail = () => {
                                                 </span>
                                             </div>
                                             <div className="text-gray-3 font-size-sd">
-                                            Net ücret almak için arayınız.
+                                                Net ücret almak için arayınız.
                                             </div>
                                         </div>
                                         <Link to="javascript:;" className="text-dark poppins-medium w-100 text-decoration-underline py-7 d-block text-center rounded-6 mt-6">
@@ -413,7 +479,7 @@ const Detail = () => {
                             </TabPanel>
                         </Tabs>
                     </div>
-                    <div className="col-4">
+                    <div className="col-4 d-md-block d-none">
                         <div className="p-30">
                             <div className="info-hotel-detail">
                                 <div className="hotel-info-div">

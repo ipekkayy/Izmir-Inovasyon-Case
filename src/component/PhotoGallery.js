@@ -9,15 +9,15 @@ import HotelImage4 from "../images/hotel-4.png"
 const PhotoGallery = () => {
     return (
         <SlideshowLightbox className="d-flex overflow-hidden mt-13">
-            <img src={HotelImage1} className="detail-list-img" />
-            <img src={HotelImage2} className="detail-list-img" />
-            <img src={HotelImage4} className="detail-list-img" />
-            <img src={HotelImage3} className="detail-list-img" />
-            <img src={HotelImage1} className="detail-list-img" />
-            <img src={HotelImage2} className="detail-list-img" />
-            <img src={HotelImage4} className="detail-list-img" />
-            <img src={HotelImage2} className="detail-list-img" />
-            <img src={HotelImage4} className="detail-list-img" />
+            <img src={HotelImage1} className="detail-list-img " />
+            <img src={HotelImage2} className="detail-list-img ms-6" />
+            <img src={HotelImage4} className="detail-list-img ms-6" />
+            <img src={HotelImage3} className="detail-list-img ms-6" />
+            <img src={HotelImage1} className="detail-list-img ms-6" />
+            <img src={HotelImage2} className="detail-list-img ms-6" />
+            <img src={HotelImage4} className="detail-list-img ms-6" />
+            <img src={HotelImage2} className="detail-list-img ms-6" />
+            <img src={HotelImage4} className="detail-list-img ms-6"  />
         </SlideshowLightbox>
     )
 

@@ -10,17 +10,17 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 4,
-    slidesToSlide: 4 
+    slidesToSlide: 4
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
     items: 3,
-    slidesToSlide: 3 
+    slidesToSlide: 3
   },
   mobile: {
     breakpoint: { max: 767, min: 464 },
     items: 2,
-    slidesToSlide: 1 
+    slidesToSlide: 1
   }
 };
 const CampaignSlider = () => {
@@ -39,8 +39,7 @@ const CampaignSlider = () => {
           <Link to="/" className="text-dark poppins-medium font-size-lm z-8">
             <img src={Campaign1} className="" />
             <div className="campaign-text poppins-bold text-white horizantal-center">
-            Yeni üyelere özel indirim fırsatı!
-
+              Yeni üyelere özel indirim fırsatı!
             </div>
           </Link>
         </div>
@@ -48,7 +47,7 @@ const CampaignSlider = () => {
           <Link to="/" className="text-dark poppins-medium font-size-lm  z-8">
             <img src={Campaign3} className="" />
             <div className="campaign-text poppins-bold text-white horizantal-center">
-            Çoklu kredi kartı ile ödeme kolaylığı!
+              Çoklu kredi kartı ile ödeme kolaylığı!
             </div>
           </Link>
         </div>
@@ -64,7 +63,7 @@ const CampaignSlider = () => {
           <Link to="/" className="text-dark poppins-medium font-size-lm z-8">
             <img src={Campaign2} className="" />
             <div className="campaign-text poppins-bold text-white horizantal-center">
-            %25’ini şimdi öde, %75’ini tatilden sonra öde!
+              %25’ini şimdi öde, %75’ini tatilden sonra öde!
 
             </div>
           </Link>

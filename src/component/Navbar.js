@@ -7,7 +7,7 @@ import AngleIcon from "../images/angle-right-icon.png";
 import { useState } from "react";
 
 const NavBar = () => {
-    const [isBarOpen,setIsBarOpen]= useState(false)
+    const [isBarOpen, setIsBarOpen] = useState(false)
     return (
         <div className="mx-20">
             <div className="position-relative index-header">
@@ -49,7 +49,7 @@ const NavBar = () => {
                             </div>
                         </div>
                         <div className="d-lg-none d-flex">
-                            <button type="button" className="mobile-menu"onClick={()=>{
+                            <button type="button" className="mobile-menu" onClick={() => {
                                 setIsBarOpen(!isBarOpen)
                             }}>
                                 <i class="fa-solid fa-bars"></i>
@@ -147,6 +147,44 @@ const NavBar = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="d-md-none d-block pb-20">
+                    <div className="row ">
+                        <div className="mb-5">
+                            <div className=" font-size-md mb-5 text-white">
+                                Konum
+                            </div>
+                            <div className="position-relative">
+                                <img src={NavigationIcon} className="navigation-icon input-icon" />
+                                <input type="text" className="form-style poppins-regular w-100" placeholder="Konum seçiniz" />
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className=" font-size-md mb-5 text-white">
+                                Giriş / Çıkış Tarihi
+                            </div>
+                            <div className="position-relative">
+                                <img src={DateIcon} className="date-icon input-icon" />
+                                <input type="date" className="form-style poppins-regular w-100" placeholder="Tarih seçiniz" />
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className=" font-size-md mb-5 text-white">
+                                Oda ve Kişi Sayısı
+                            </div>
+                            <div className="position-relative">
+                                <img src={UserIcon} className="user-icon input-icon" />
+                                <input type="text" className="form-style poppins-regular w-100" placeholder="Oda ve kişi sayısı seçiniz" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="text-center">
+                    <button className="text-white bg-transparent poppins-medium mt-13 border-0">
+                        Ara
+                        <img src={AngleIcon} className="search-angle-icon" />
+                    </button>
+                    </div>
+                   
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Dropdown from "../component/Dropdown";
+import ListFilter from "../component/ListFilter";
 import { useContext, useEffect, useState } from "react";
 import { MyContext } from "../context";
 import StarIcon from "../images/star-icon.png";
@@ -26,7 +26,7 @@ const List = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-3">
+                <div className="col-md-3">
                     <div className="signup-text text-center">
                         Özel fırsatları kaçırma !
                         <Link to="/" className="text-blue ms-6 ">
@@ -37,10 +37,10 @@ const List = () => {
                         Filtrele
                     </div>
                     <div className="bg-light-gray p-13 rounded-6">
-                        <Dropdown handleFilter={setFilteredData} filteredData={hotelData} />
+                        <ListFilter handleFilter={setFilteredData} filteredData={hotelData} />
                     </div>
                 </div>
-                <div className="col-9 ">
+                <div className="col-md-9 ">
                     <div className="d-flex align-items-center font-size-md breadcrumb">
                         <Link to="/" className="text-gray">
                             Anasayfa
@@ -52,11 +52,8 @@ const List = () => {
                     </div>
                     <div className="d-flex align-items-center my-10">
                         <div className="font-size-lm poppins-medium">
-                            Otel
+                            Oteller
                         </div>
-                        <span className="text-gray ms-17">
-                            129 tesis bulduk!
-                        </span>
                     </div>
                     <div className="position-relative">
                         <input className="search-filter w-100 poppins-regular" placeholder="Aradığınız bir otel var mı ?" value={searchQuery}
@@ -66,7 +63,7 @@ const List = () => {
                     <div className="row mt-13">
                         {filteredData.length > 0 ? filteredData.map((item, index) => {
                             return (
-                                <div className="col-6 mb-25">
+                                <div className="col-md-6 mb-25">
                                     <div className="" key={index}>
                                         <Link to="/pages/detail" className="text-dark poppins-medium font-size-ml ">
                                             <img src={item.image} className="w-100 list-img" />
@@ -84,14 +81,14 @@ const List = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className="d-flex align-items-center mb-3">
+                                        <div className="d-md-flex align-items-center mb-3">
                                             <div className="d-flex align-items-center">
                                                 <img src={NavigationIcon} className="w-15px" />
                                                 <span className="text-gray font-size-md poppins-medium ms-6 text-overflow">
                                                     {item.address}
                                                 </span>
                                             </div>
-                                            <Link to="/" className="text-blue poppins-medium font-size-sd ms-17">
+                                            <Link to="/" className="text-blue poppins-medium font-size-sd ms-17 d-md-flex d-none">
                                                 Haritada Göster
                                             </Link>
                                         </div>
